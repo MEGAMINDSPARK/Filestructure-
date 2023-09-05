@@ -24,23 +24,12 @@ const App=()=> {
     },
   ];
 
-  // return (
-  //   <div>
-  //     <h2>Let's get started!</h2>
-  //     <Expenses items={expenses} />
-  //   </div>
-  // );
-  // return React.createElement('div',{},React.createElement('h2',{},'Let\'s get started'),);//3 arg what should be created,obj that configure the element specifically an obj which sets all the attributesof this element , content bw opening and closing  div or what u created
-  //instead of jsx u can use this  for this u have to import react from react 
   return React.createElement(
     "div",
     {},
     React.createElement("h2", {}, "Let's get started"),
     React.createElement(Expenses,{items:expenses})//custom ke case me jo aap import kie ho 
   );
-  // because u need import react in all the component file because this is the under the hood code whichkind of created automatically when u crate jsx
-
-
     
 
 }
