@@ -1,5 +1,6 @@
 import Expenses from "./components/Expenses/Expenses";
 import React from "react";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 const App=()=> {
   const expenses = [
@@ -24,11 +25,13 @@ const App=()=> {
     },
   ];
 
-  return React.createElement(
-    "div",
-    {},
-    React.createElement("h2", {}, "Let's get started"),
-    React.createElement(Expenses,{items:expenses})//custom ke case me jo aap import kie ho 
+  return(
+    
+    <div>
+    <h2>Let's Get Started</h2>,
+    <NewExpense/>
+    <Expenses items={expenses} />
+    </div>
   );
     
 
